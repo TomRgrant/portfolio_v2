@@ -1,0 +1,234 @@
+.home-container {
+    overflow: auto;
+    scroll-snap-type: y mandatory;
+  }
+
+  .section {
+    height: 100vh;
+    scroll-snap-align: start;
+  }
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+.about-me-header {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    background-color: #cce3de;
+}
+
+/* About me text Style ---------------------------- */
+.about-me-name {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 100%;
+    gap: 3em;
+    padding-top: 3rem;
+}
+
+.name-text {
+    font-family: 'Josefin Slab', serif, Arial, Helvetica, sans-serif;
+    font-size: 8em;
+    color: #6b9080;
+    display: flex;
+    text-decoration: underline;
+}
+
+.first {
+    justify-content: left;
+    padding-left: 10%;
+}
+
+.last {
+    justify-content: right;
+    padding-right: 10%;
+}
+
+
+/* About me Img Style ------------------------*/
+
+.about-me-img {
+    width: 50%;
+    height: 100%;
+    background-image: linear-gradient(to right, #cce3deff, rgba(0, 0, 0, 0.5) 60%), url('../images/me_in_my_brain.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.headshot {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* About me description ------------------- */
+
+.about-me-description {
+    font-family: 'Carrois Gothic', serif, Arial, Helvetica, sans-serif;
+    color: #6b9080;
+    font-weight: 500;
+    text-align: center;
+    font-size: 2em;
+    padding: 0 1em;
+    line-height: 1.2em;
+    display: inline-block;
+    text-align: left;
+    margin: 0 auto;
+}
+
+/* Projects Section ------------------------------ */
+
+.projects {
+    height: 100vh;
+    width: 100vw;
+    background-color: #6b9080;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.project-section-title {
+    padding: 3rem;
+    text-align: center;
+    padding-top: .7em;
+    font-size: 4.5rem;
+    font-family: 'Josefin Slab', serif, Arial, Helvetica, sans-serif;
+    color: #cce3de;
+    text-decoration: underline;
+}
+
+.project-cards {
+    display: flex;
+    width: 70%;
+    height: 75%;
+    justify-content: center;
+    box-shadow: .1em .1em .5em black;
+
+}
+
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.slide-img {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+}
+
+.swiper-pagination-bullet {
+    width: 12px !important;
+    height: 12px !important;
+    background-color: #a4c3b2 !important;
+    opacity: 1 !important;
+  }
+  
+  .swiper-pagination-bullet-active {
+    background-color: #f6fff8 !important;
+  }
+
+.swiper-button-next,
+.swiper-button-prev {
+  background-color: #6b9080;
+  color: #cce3de !important;
+  font-size: .5em;
+  border-radius: 10px;
+  padding: .5em;
+  border: 1px solid #eaf4f4;
+  box-shadow: .1em .1em .5em black;
+}
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+  background-color: #cce3de;
+  color: #6b9080 !important;
+}
+
+/* Skills Section -------------------------------------- */
+
+.skills {
+    height: 100vh;
+    width: 100vw;
+    background-color: #cce3de;
+    display: flex;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Media Queries -----------------------*/
+
+@media (max-width: 950px) {
+    .name-text {
+        font-size: 5em;
+    }
+
+    .about-me-description {
+        font-size: 1.6em;
+    }
+}
+
+@media (max-width: 850px) {
+    .about-me-description {
+        font-size: 1.2em;
+    }
+}
+
+@media (max-width: 650px) {
+    .name-text {
+        font-size: 3em;
+    }
+
+    .about-me-description {
+        font-size: 1em;
+    }
+
+    .project-section-title {
+        font-size: 2.5rem;
+    }
+}
+
+@media (max-width: 450px) {
+    .about-me-description {
+        font-size: .8em;
+    }
+
+    .project-section-title {
+        font-size: 1.5rem;
+    }
+}
+
