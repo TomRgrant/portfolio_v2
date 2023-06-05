@@ -1,6 +1,5 @@
 .home-container {
-    overflow: auto;
-    scroll-snap-type: y mandatory;
+    overflow: hidden;
   }
 
   .section {

@@ -65,7 +65,7 @@ const skills = [
     {
         name: 'MongoDB',
         img: mongodb,
-        alt: 'logo of '
+        alt: 'logo of MongoDB'
     },
     {
         name: 'Spring',
@@ -74,4 +74,17 @@ const skills = [
     },
 ]
 
-export default skills
+const learning = [
+    {
+        name: 'TypeScript',
+        img: '',
+        alt: 'logo of TypeScript'
+    },
+    {
+        name: 'BootStrap',
+        img: '',
+        alt: 'logo of BootStrap'
+    },
+]
+
+export {skills, learning}
