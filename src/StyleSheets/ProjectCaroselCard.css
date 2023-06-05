@@ -1,7 +1,7 @@
 .card {
     width: 100%;
     height: 100%;
-    background-color: #6b9080;
+    background-color: #cbe3de;
 }
 
 .card-img {
@@ -27,7 +27,7 @@
 
 .card-summary {
     height: 20%;
-    color: #cce3de;
+    color: #6b9080;
     padding: 0 .5em;
     font-size: 1.4em;
     font-family: 'Carrois Gothic', serif, Arial, Helvetica, sans-serif;

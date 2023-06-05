@@ -1,22 +1,25 @@
 .container {
     display: flex;
     flex-direction: column;
-    border: 1px solid red;
     justify-content: center;
     align-items: center;
+    background-color: #6b9080;
+    border-radius: 60px;
+    box-shadow: 0 0 .5em black;
 }
 
 .skill-img {
     background-color: white;
     padding: .2em;
-    width: 4em;
-    height: 4em;
-    border-radius: 50%;
+    width: 6em;
+    height: 6em;
+    border-radius: 20px;
+    box-shadow: 0 0 .5em black;
 }
 
 .skill-name {
     margin-top: .5em;
-    color: #6b9080;
+    color: #cbe3de;
     font-size: 1.8em;
     font-family: 'Josefin Slab', serif, Arial, Helvetica, sans-serif;
 }

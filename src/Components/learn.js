@@ -1,11 +1,15 @@
 import React from "react";
 
+import '../StyleSheets/Learn.css'
+
 const Learn = ({ learn }) => {
 
 
 return(
     <>
-    <h1>{learn.name}</h1>
+    <div className="contain">
+        <h1>{learn.name}</h1>
+    </div>
     </>
 );
 };
