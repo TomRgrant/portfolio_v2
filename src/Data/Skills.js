@@ -11,6 +11,10 @@ import flask from '../images/flask.png'
 import mongodb from '../images/mongodb.png'
 import spring from '../images/spring.png'
 
+import typescript from '../images/typescript.png'
+import bootstrap from '../images/bootstrap.png'
+import tailwind from '../images/tailwind.png'
+
 const skills = [
     {
         name: 'Javascript',
@@ -77,14 +81,19 @@ const skills = [
 const learning = [
     {
         name: 'TypeScript',
-        img: '',
+        img: typescript,
         alt: 'logo of TypeScript'
     },
     {
         name: 'BootStrap',
-        img: '',
+        img: bootstrap,
         alt: 'logo of BootStrap'
     },
+    {
+        name: 'Tailwind',
+        img: tailwind,
+        alt: 'logo of Tailwind'
+    }
 ]
 
 export {skills, learning}

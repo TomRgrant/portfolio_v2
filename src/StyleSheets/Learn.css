@@ -1,0 +1,15 @@
+.learn-img {
+    background-color: white;
+    padding: .5em;
+    object-fit: cover;
+    border-radius: 20px;
+    box-shadow: 0 0 .5em black;
+}
+
+.learn-container {
+    display: flex;
+    flex-direction: column;
+    background-color: #ff000056;
+    width: 10.5em;
+    margin: auto;
+}

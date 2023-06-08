@@ -3,7 +3,7 @@ import {skills, learning} from '../Data/Skills.js'
 
 import '../StyleSheets/SkillDisplay.css'
 import SkillNode from "./skillNode.js";
-import Learn from "./learn.js";
+import Learn from "./Learn.js";
 
 const SkillDisplay = () => {
 
@@ -21,9 +21,6 @@ const learningNodes = learning.map((learn) => {
         <div className="skill-wrapper">
             <div className="skill-container">
                 {skillNodes}
-            </div>
-            <div className="learning-skills">
-                {learningNodes}
             </div>
         </div>
         </>

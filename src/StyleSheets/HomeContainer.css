@@ -18,17 +18,19 @@ p {
     display: flex;
     height: 100vh;
     width: 100vw;
-    background-color: #cce3de;
 }
 
 /* About me text Style ---------------------------- */
 .about-me-name {
     display: flex;
+    overflow: hidden;
+    background-color: #cce3de;
     flex-direction: column;
     width: 50%;
     height: 100%;
     gap: 3em;
     padding-top: 3rem;
+    z-index: -1;
 }
 
 .name-text {
@@ -71,6 +73,7 @@ p {
 
 .about-me-description {
     font-family: 'Carrois Gothic', serif, Arial, Helvetica, sans-serif;
+    height: auto;
     color: #6b9080;
     font-weight: 500;
     text-align: center;
@@ -88,6 +91,8 @@ p {
     height: 100vh;
     width: 100vw;
     background-color: #6b9080;
+    background-image: linear-gradient(45deg, #6b9080 43.48%, #a4c3b214 43.48%, rgba(164, 195, 178, 0.663) 50%, #6b9080 50%, #6b9080 93.48%, #a4c3b214 93.48%, #a4c3b214 100%);
+    background-size: 32.53px 32.53px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -135,33 +140,43 @@ p {
 
 .swiper-button-next,
 .swiper-button-prev {
-  background-color: #6b9080;
-  color: #cce3de !important;
+  color: black !important;
   font-size: .5em;
-  border-radius: 10px;
-  padding: .5em;
-  border: 1px solid #eaf4f4;
-  box-shadow: .1em .1em .5em black;
+  text-shadow: -1px -1px 0 #ffff, 1px -1px 0 #ffff, -1px 1px 0 #ffff, 1px 1px 0 #ffff;
 }
 
-.swiper-button-next:hover,
-.swiper-button-prev:hover {
-  background-color: #cce3de;
-  color: #6b9080 !important;
-}
 
 /* Skills Section -------------------------------------- */
 
 .skills {
     height: 100vh;
     width: 100vw;
-    background-color: #cce3de;
+    background-image: linear-gradient(45deg, #cce3de 43.48%, #a4c3b2a8 43.48%, #a4c3b2a8 50%, #cce3de 50%, #cce3de 93.48%, #a4c3b2a8 93.48%, #a4c3b2a8 100%);
+    background-size: 32.53px 32.53px;
     display: flex;
+    flex-direction: column;
+}
+
+.my-skills-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: .7em;
+    font-size: 4.5rem;
+    font-family: 'Josefin Slab', serif, Arial, Helvetica, sans-serif;
+    color: #6b9080;
+    text-decoration: underline;
 }
 
 
 
-
+.size-test {
+    width: 40%;
+    height: 40%;
+    background-color: #0000ff71;
+    margin: auto;
+}
 
 
 

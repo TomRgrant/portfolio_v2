@@ -7,8 +7,9 @@ import 'swiper/swiper-bundle.css';
 
 
 import projects from '../Data/ProjectList.js';
-import skills from '../Data/Skills.js';
+import {skills, learning} from '../Data/Skills.js';
 import SkillDisplay from "../Components/SkillDisplay";
+import Learn from "../Components/Learn";
 
 SwiperCore.use([Autoplay, Pagination, Navigation]);
 
@@ -18,6 +19,12 @@ const HomeContainer = () => {
   const projectNodes = projects.map((project) => (
     <SwiperSlide key={project.name}>
       <ProjectCaroselCard project={project} />
+    </SwiperSlide>
+  ));
+
+  const learningNodes = learning.map((learn) => (
+    <SwiperSlide key={learn.name}>
+      <Learn learn={learn} />
     </SwiperSlide>
   ));
 
@@ -56,7 +63,16 @@ return (
         </section>
 
         <section className="skills">
-            <SkillDisplay />
+          <h1 className="my-skills-title">My Skills</h1>
+          <SkillDisplay />
+          <div className="size-test">
+          <Swiper
+              speed={1500}
+              autoplay={{ delay: 3000 }}
+            >
+              {learningNodes}
+            </Swiper>
+            </div>
         </section>
       </section>
     </>
