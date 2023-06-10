@@ -1,11 +1,6 @@
 .home-container {
     overflow: hidden;
-  }
-
-  .section {
-    height: 100vh;
-    scroll-snap-align: start;
-  }
+}
 
 p {
     margin: 0;
@@ -169,18 +164,43 @@ p {
     text-decoration: underline;
 }
 
+.learning-container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1em;
+}
 
+.learning-now-text {
+    font-size: 4em;
+    color: blue;
+}
 
-.size-test {
-    width: 40%;
-    height: 40%;
-    background-color: #0000ff71;
-    margin: auto;
+.learning-now-text-left {
+    margin-right: 1em;
+}
+
+.learning-now-text-right {
+    margin-left: 1em;
 }
 
 
 
+.learning-slider {
+    width: 15em;
+}
 
+.learning-slider .swiper-slide {
+    transition: all 0.6s;
+}
+
+.learning-slider .swiper-slide-prev,
+.learning-slider .swiper-slide-next {
+transform: scale(0.8);
+opacity: 0.6;
+}
 
 
 

@@ -4,24 +4,29 @@ import ProjectCaroselCard from "../Components/ProjectCaroselCard";
 import { Swiper, SwiperSlide } from 'swiper/react';
 import SwiperCore, { Autoplay, Pagination, Navigation } from "swiper";
 import 'swiper/swiper-bundle.css';
-
+import { Carousel } from "react-responsive-carousel";
+import "react-responsive-carousel/lib/styles/carousel.min.css";
 
 import projects from '../Data/ProjectList.js';
 import {skills, learning} from '../Data/Skills.js';
 import SkillDisplay from "../Components/SkillDisplay";
 import Learn from "../Components/Learn";
 
+import { EffectCube } from "swiper";
+
+
 SwiperCore.use([Autoplay, Pagination, Navigation]);
 
 const HomeContainer = () => {
 
-
+// creates list of nodes for Projects
   const projectNodes = projects.map((project) => (
     <SwiperSlide key={project.name}>
       <ProjectCaroselCard project={project} />
     </SwiperSlide>
   ));
 
+// creates list of nodes for Learning skills
   const learningNodes = learning.map((learn) => (
     <SwiperSlide key={learn.name}>
       <Learn learn={learn} />
@@ -56,6 +61,7 @@ return (
               autoplay={{ delay: 3500 }}
               pagination={{ clickable: true }}
               navigation
+              loop={true}
             >
               {projectNodes}
             </Swiper>
@@ -65,14 +71,33 @@ return (
         <section className="skills">
           <h1 className="my-skills-title">My Skills</h1>
           <SkillDisplay />
-          <div className="size-test">
-          <Swiper
-              speed={1500}
-              autoplay={{ delay: 3000 }}
-            >
-              {learningNodes}
-            </Swiper>
+
+          <div className="learning-container">
+
+            <div className="text-container">
+              <p className="learning-now-text learning-now-text-left">Learning</p>
             </div>
+
+            <div className="swiper-container">
+              <Swiper
+                className="learning-slider"
+                speed={1500}
+                autoplay={{ delay: 1500 }}
+                slidesPerView={1}
+                centeredSlides={true}
+                loop={true}
+                spaceBetween={-30}
+              >
+                {learningNodes}
+              </Swiper>
+              </div>
+
+              <div className="text-container">
+                <p className="learning-now-text learning-now-text-right">Now</p>
+              </div>
+
+          </div>
+
         </section>
       </section>
     </>
