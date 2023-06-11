@@ -175,7 +175,9 @@ p {
 
 .learning-now-text {
     font-size: 4em;
-    color: blue;
+    color: #6b9080;
+    font-family: 'Josefin Slab', serif, Arial, Helvetica, sans-serif;
+    font-weight: 700;
 }
 
 .learning-now-text-left {
@@ -185,8 +187,6 @@ p {
 .learning-now-text-right {
     margin-left: 1em;
 }
-
-
 
 .learning-slider {
     width: 15em;

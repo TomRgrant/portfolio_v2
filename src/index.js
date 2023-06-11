@@ -3,10 +3,19 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
 import HomeContainer from './Containers/HomeContainer';
+import {BrowserRouter, Routes, Route} from "react-router-dom";
+import Projects from './Containers/Projects';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <HomeContainer />
+  <>
+  <BrowserRouter>
+  <Routes>
+    <Route path='/' element={<HomeContainer/>}/>
+    <Route path="/projects" element={<Projects/>}/>
+  </Routes>
+  </BrowserRouter>
+  </>
 );
 
 // If you want to start measuring performance in your app, pass a function

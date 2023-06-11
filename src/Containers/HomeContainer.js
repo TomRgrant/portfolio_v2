@@ -6,6 +6,7 @@ import SwiperCore, { Autoplay, Pagination, Navigation } from "swiper";
 import 'swiper/swiper-bundle.css';
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
+import {Routes, Route, Link} from "react-router-dom";
 
 import projects from '../Data/ProjectList.js';
 import {skills, learning} from '../Data/Skills.js';
@@ -66,6 +67,7 @@ return (
               {projectNodes}
             </Swiper>
           </div>
+          <p><Link to="/projects" >Go to projects page</Link></p>
         </section>
 
         <section className="skills">
@@ -75,7 +77,7 @@ return (
           <div className="learning-container">
 
             <div className="text-container">
-              <p className="learning-now-text learning-now-text-left">Learning</p>
+              <p className="learning-now-text learning-now-text-left">Currently &lt;</p>
             </div>
 
             <div className="swiper-container">
@@ -93,7 +95,7 @@ return (
               </div>
 
               <div className="text-container">
-                <p className="learning-now-text learning-now-text-right">Now</p>
+                <p className="learning-now-text learning-now-text-right">&gt; Learning</p>
               </div>
 
           </div>
