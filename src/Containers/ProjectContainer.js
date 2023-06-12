@@ -12,14 +12,16 @@ const projectNodes = projects.map((project) => {
     let className = 'left-project';
     alternate ++;
     if (alternate %2 === 0) {
-        className = 'right-project'
+        className = 'right-project';
     };
     return <ProjectPage className={className} key={project.name} project={project}/>
 })
 
     return(
         <>
+        <div className="project-showcase-container">
             {projectNodes}
+        </div>
         </>
     );
 };
