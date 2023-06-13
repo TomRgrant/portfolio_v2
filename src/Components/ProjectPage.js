@@ -18,7 +18,7 @@ const ProjectPage = ({ project, className }) => {
                 </div>
                 <div className="info-box">
                     <h1 className="project-title">{project.name}</h1>
-                    <p className="project-description">Description</p>
+                    <p className="project-description">{project.description}</p>
                 </div>
             </div>
         </div>

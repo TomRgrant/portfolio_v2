@@ -14,15 +14,19 @@
 
 .left-project {
     background-color: #6b9080;
-    color: red;
+    color: #cbe3de;
     text-align: left;
+    background-image: linear-gradient(45deg, #6b9080 43.48%, #a4c3b214 43.48%, rgba(164, 195, 178, 0.663) 50%, #6b9080 50%, #6b9080 93.48%, #a4c3b214 93.48%, #a4c3b214 100%);
+    background-size: 32.53px 32.53px;
 }
 
 .right-project {
     background-color: #cbe3de;
-    color: blue;
+    color: #6b9080;
     flex-direction: row-reverse;
     text-align: right;
+    background-image: linear-gradient(45deg, #cce3de 43.48%, #a4c3b2a8 43.48%, #a4c3b2a8 50%, #cce3de 50%, #cce3de 93.48%, #a4c3b2a8 93.48%, #a4c3b2a8 100%);
+    background-size: 32.53px 32.53px;
 }
 
 .project-thumbnail {
@@ -31,11 +35,24 @@
 }
 
 .project-thumbnail-container {
-    height: 25em;
-    width: 45em;
+    height: 30em;
+    width: 45%;
 }
 
 .info-box {
     display: flex;
     flex-direction: column;
+    width: 55%;
+    padding: 1em;
+    gap: 1em;
+}
+
+.project-title {
+    font-size: 2.5em;
+    text-decoration: underline;
+    font-family: 'Josefin Slab', serif, Arial, Helvetica, sans-serif;;
+}
+
+.project-description {
+    font-size: 1.5em;
 }
