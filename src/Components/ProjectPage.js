@@ -13,9 +13,13 @@ const ProjectPage = ({ project, className }) => {
         <>
         <div className='project-showcase-container' >
             <div className={`project-container ${className}`}>
-                <img className="project-thumbnail" src={project.img}/>
-                <h1>{project.name}</h1>
-                <p>Description</p>
+                <div className="project-thumbnail-container">
+                    <img className="project-thumbnail" src={project.img}/>
+                </div>
+                <div className="info-box">
+                    <h1 className="project-title">{project.name}</h1>
+                    <p className="project-description">Description</p>
+                </div>
             </div>
         </div>
         </>
