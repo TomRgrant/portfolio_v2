@@ -7,7 +7,7 @@ const ProjectPage = ({ project, className }) => {
 
 // opens project github page in new tab
 const sourceCode = (e) => {
-    window.open(e, '_blank')
+    window.open(e)
 }
 
 
