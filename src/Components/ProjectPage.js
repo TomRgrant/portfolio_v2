@@ -10,6 +10,11 @@ const sourceCode = (e) => {
     window.open(e)
 }
 
+// opens the demo for the project
+const viewDemo= (e) => {
+    window.open(e)
+}
+
 
 
     return(
@@ -26,6 +31,7 @@ const sourceCode = (e) => {
                     <p className="project-description">{project.description}</p>
                     <div className="code-buttons">
                         <h2 onClick={() => sourceCode(project.code)}>View Source Code</h2>
+                        <h2 onClick={() => viewDemo(project.url)} hidden={project.url ? false : true}>View Demo</h2>
                     </div>
                 </div>
             </div>

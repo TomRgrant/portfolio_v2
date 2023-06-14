@@ -35,7 +35,7 @@
 }
 
 .project-thumbnail-container {
-    height: 30em;
+    height: 32em;
     width: 45%;
 }
 
@@ -55,4 +55,12 @@
 
 .project-description {
     font-size: 1.5em;
+}
+
+.code-buttons {
+
+}
+
+.code-buttons:hover {
+    cursor: pointer;
 }
