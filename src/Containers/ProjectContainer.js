@@ -20,12 +20,11 @@ const projectNodes = projects.map((project) => {
 
     return(
         <>
-        <div className="project-nav">
-            <h1>My Projects</h1>
-            <Link to='/' className="project-nav-link">Go Back Home</Link>
-        </div>
         <div className="project-showcase-container">
             {projectNodes}
+            <div className="home-page-div">
+                <Link to='/' className="home-page-button"> Back to Home Page </Link>
+            </div>
         </div>
         </>
     );

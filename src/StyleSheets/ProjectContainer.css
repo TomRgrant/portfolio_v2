@@ -99,22 +99,29 @@
 
 /* Project Nav ---------------------------------- */
 
-.project-nav {
-    width: 100%;
-    height: auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 1.5em;
-    text-decoration: underline;
-    overflow: hidden;
-    padding: 0.5em 0 0.5em 0;
+.home-page-div {
+    width: auto;
+    margin: auto;
+    background-color: #d4e2df;
+    padding: .3em;
+    border-radius: 15px;
+    box-shadow: .2em .2em .2em rgb(79, 78, 78);
+    border: 1px solid #6b9080;
+    transition: all;
+    transition-duration: 0.5s;
+    padding: .5em;
 }
 
-.project-nav-link {
-    text-decoration: underline;
-    color: black;
+.home-page-button {
+    color: #6b9080;
+    font-size: 3em;
+    text-decoration: none;
 }
+
+.home-page-div:hover{
+    transform: scale(1.05) rotateX(20deg);
+    box-shadow:  .3em .3em .3em rgb(79, 78, 78);
+  }
 
 /* Project skills ------------------- */
 
