@@ -3,35 +3,34 @@
     height: 100%;
     display: flex;
     flex-direction: column;
-    background-color: #757575;
+    color: #6b9080;
+    gap: 3em;
+    background-color: #6b9080;
+    background-image: linear-gradient(45deg, #6b9080 43.48%, #a4c3b214 43.48%, rgba(164, 195, 178, 0.663) 50%, #6b9080 50%, #6b9080 93.48%, #a4c3b214 93.48%, #a4c3b214 100%);
+    background-size: 32.53px 32.53px;
 }
 
 .project-container {
     display: flex;
     width: 100%;
     height: auto;
+    gap: 1em;
 }
 
 .left-project {
-    background-color: #6b9080;
-    color: #cbe3de;
-    text-align: left;
-    background-image: linear-gradient(45deg, #6b9080 43.48%, #a4c3b214 43.48%, rgba(164, 195, 178, 0.663) 50%, #6b9080 50%, #6b9080 93.48%, #a4c3b214 93.48%, #a4c3b214 100%);
-    background-size: 32.53px 32.53px;
+    text-align: center;
 }
 
 .right-project {
-    background-color: #cbe3de;
-    color: #6b9080;
     flex-direction: row-reverse;
     text-align: right;
-    background-image: linear-gradient(45deg, #cce3de 43.48%, #a4c3b2a8 43.48%, #a4c3b2a8 50%, #cce3de 50%, #cce3de 93.48%, #a4c3b2a8 93.48%, #a4c3b2a8 100%);
-    background-size: 32.53px 32.53px;
 }
 
 .project-thumbnail {
     height: 100%;
     width: 100%;
+    border-radius: 45% 55% 48% 52% / 43% 30% 70% 57% ;
+    box-shadow: .1em .1em .5em black;
 }
 
 .project-thumbnail-container {
@@ -40,11 +39,15 @@
 }
 
 .info-box {
+    text-align: center;
     display: flex;
     flex-direction: column;
     width: 55%;
     padding: 1em;
     gap: 1em;
+    background-color: #cbe3de;
+    border-radius: 12% 13% 21% 14% / 33% 36% 28% 43% ;
+    box-shadow: .1em .1em .5em black;
 }
 
 .project-title {
@@ -58,7 +61,9 @@
 }
 
 .code-buttons {
-
+    display: flex;
+    gap: 2em;
+    justify-content: center;
 }
 
 .code-buttons:hover {
