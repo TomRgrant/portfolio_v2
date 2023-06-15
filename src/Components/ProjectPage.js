@@ -30,8 +30,8 @@ const viewDemo= (e) => {
                     </div>
                     <p className="project-description">{project.description}</p>
                     <div className="code-buttons">
-                        <h2 onClick={() => sourceCode(project.code)}>View Source Code</h2>
-                        <h2 onClick={() => viewDemo(project.url)} hidden={project.url ? false : true}>View Demo</h2>
+                        <h2 className="project-button" onClick={() => sourceCode(project.code)}>View Source Code</h2>
+                        <h2 className="project-button" onClick={() => viewDemo(project.url)} hidden={project.url ? false : true}>View Demo</h2>
                     </div>
                 </div>
             </div>

@@ -59,6 +59,7 @@
     background-color: #cce3de;
     border-radius: 25%;
     box-shadow: .1em .1em .5em black;
+    gap: 2em;
 }
 
 .project-title {
@@ -79,6 +80,21 @@
 
 .code-buttons:hover {
     cursor: pointer;
+}
+
+.project-button {
+    background-color: #d4e2df;
+    padding: .3em;
+    border-radius: 15px;
+    box-shadow: .1em .1em .1em;
+    border: 1px solid #6b9080;
+    transition: all;
+    transition-duration: 0.5s;
+}
+
+.project-button:hover {
+    transform: scale(1.05) rotateX(20deg);
+    box-shadow: .2em .2em .2em;
 }
 
 /* Project Nav ---------------------------------- */
