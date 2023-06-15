@@ -115,3 +115,19 @@
     text-decoration: underline;
     color: black;
 }
+
+/* Project skills ------------------- */
+
+.project-skill {
+    height: 2.5em;
+    width: 2.5em;
+    border-radius: 20px;
+    padding: .5em;
+    background-color: white;
+}
+
+.project-skill-list {
+    display: flex;
+    gap: .5em;
+    justify-content: center;
+}

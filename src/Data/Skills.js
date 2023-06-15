@@ -10,7 +10,6 @@ import sql from '../images/sql.png'
 import flask from '../images/flask.png'
 import mongodb from '../images/mongodb.png'
 import spring from '../images/spring.png'
-
 import typescript from '../images/typescript.png'
 import bootstrap from '../images/bootstrap.png'
 import tailwind from '../images/tailwind.png'

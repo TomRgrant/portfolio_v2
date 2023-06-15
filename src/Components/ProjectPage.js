@@ -1,5 +1,6 @@
 import React from "react";
 import '../StyleSheets/ProjectContainer.css'
+import ProjectSkill from "./ProjectSkill";
 
 
 const ProjectPage = ({ project, className }) => {
@@ -15,6 +16,10 @@ const viewDemo= (e) => {
     window.open(e)
 }
 
+const skillNodes = project.skills.map((skill) => {
+    return <ProjectSkill skill={skill} key={skill.name}/>
+})
+
 
 
     return(
@@ -27,6 +32,9 @@ const viewDemo= (e) => {
                 <div className="info-box">
                     <div className="title-container">
                         <h1 className="project-title">{project.name}</h1>
+                        <div className="project-skill-list">
+                            {skillNodes}
+                        </div>
                     </div>
                     <p className="project-description">{project.description}</p>
                     <div className="code-buttons">
