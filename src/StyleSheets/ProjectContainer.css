@@ -1,4 +1,5 @@
 .project-showcase-container {
+    padding: 1em 0 1em 0;
     width: 100%;
     height: 100%;
     display: flex;
@@ -15,15 +16,24 @@
     width: 100%;
     height: auto;
     gap: 1em;
+    justify-content: space-between;
 }
 
 .left-project {
     text-align: center;
 }
 
+.left-project > .info-box {
+    margin-right: 1em;
+}
+
 .right-project {
     flex-direction: row-reverse;
     text-align: right;
+}
+
+.right-project > .info-box {
+    margin-left: 1em;
 }
 
 .project-thumbnail {
@@ -36,6 +46,7 @@
 .project-thumbnail-container {
     height: 32em;
     width: 45%;
+    padding: 1em;
 }
 
 .info-box {
@@ -45,8 +56,8 @@
     width: 55%;
     padding: 1em;
     gap: 1em;
-    background-color: #cbe3de;
-    border-radius: 12% 13% 21% 14% / 33% 36% 28% 43% ;
+    background-color: #cce3de;
+    border-radius: 25%;
     box-shadow: .1em .1em .5em black;
 }
 
@@ -68,4 +79,23 @@
 
 .code-buttons:hover {
     cursor: pointer;
+}
+
+/* Project Nav ---------------------------------- */
+
+.project-nav {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+    text-decoration: underline;
+    overflow: hidden;
+    padding: 0.5em 0 0.5em 0;
+}
+
+.project-nav-link {
+    text-decoration: underline;
+    color: black;
 }

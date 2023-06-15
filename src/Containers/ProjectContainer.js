@@ -3,6 +3,7 @@ import projects from '../Data/ProjectList'
 import placeholder from '../images/placeholder.png'
 import ProjectPage from "../Components/ProjectPage";
 import '../StyleSheets/ProjectContainer.css'
+import { Link } from "react-router-dom";
 
 const Projects = () => {
 
@@ -19,6 +20,10 @@ const projectNodes = projects.map((project) => {
 
     return(
         <>
+        <div className="project-nav">
+            <h1>My Projects</h1>
+            <Link to='/' className="project-nav-link">Go Back Home</Link>
+        </div>
         <div className="project-showcase-container">
             {projectNodes}
         </div>
