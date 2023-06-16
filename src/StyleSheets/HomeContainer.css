@@ -1,3 +1,4 @@
+
 .home-container {
     overflow: hidden;
 }
@@ -11,7 +12,7 @@ p {
     padding: 0;
     margin: 0;
     display: flex;
-    height: 100vh;
+    height: 105vh;
     width: 100vw;
 }
 
@@ -83,7 +84,7 @@ p {
 /* Projects Section ------------------------------ */
 
 .projects {
-    height: 100vh;
+    height: 105vh;
     width: 100vw;
     background-color: #6b9080;
     background-image: linear-gradient(45deg, #6b9080 43.48%, #a4c3b214 43.48%, rgba(164, 195, 178, 0.663) 50%, #6b9080 50%, #6b9080 93.48%, #a4c3b214 93.48%, #a4c3b214 100%);
@@ -94,7 +95,7 @@ p {
 }
 
 .project-section-title {
-    padding: 3rem;
+    padding: 2rem;
     text-align: center;
     padding-top: .7em;
     font-size: 4.5rem;
@@ -140,11 +141,37 @@ p {
   text-shadow: -1px -1px 0 #ffff, 1px -1px 0 #ffff, -1px 1px 0 #ffff, 1px 1px 0 #ffff;
 }
 
+.projects-page-div {
+    width: auto;
+    margin: auto;
+    background-color: #d4e2df;
+    padding: .3em;
+    border-radius: 15px;
+    box-shadow: .2em .2em .2em rgb(79, 78, 78);
+    border: 1px solid #445d53;
+    transition: all;
+    transition-duration: 0.5s;
+    padding: .5em;
+    background-position: center center;
+    cursor: pointer;
+}
+
+.project-page-button {
+    color: #6b9080;
+    font-size: 3em;
+    text-decoration: none;
+}
+
+.projects-page-div:hover{
+    transform: scale(1.05) rotateX(20deg);
+    box-shadow:  .3em .3em .3em rgb(79, 78, 78);
+}
+
 
 /* Skills Section -------------------------------------- */
 
 .skills {
-    height: 100vh;
+    height: 105vh;
     width: 100vw;
     background-image: linear-gradient(45deg, #cce3de 43.48%, #a4c3b2a8 43.48%, #a4c3b2a8 50%, #cce3de 50%, #cce3de 93.48%, #a4c3b2a8 93.48%, #a4c3b2a8 100%);
     background-size: 32.53px 32.53px;

@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useRef } from "react";
 import "../StyleSheets/HomeContainer.css";
 import ProjectCaroselCard from "../Components/ProjectCaroselCard";
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -53,7 +53,7 @@ return (
           <div className="about-me-img" />
         </section>
 
-        <section className="projects">
+        <section className="projects" >
           <h1 className="project-section-title">My Projects</h1>
 
           <div className="project-cards">
@@ -67,10 +67,12 @@ return (
               {projectNodes}
             </Swiper>
           </div>
-          <p><Link to="/projects" >Go to projects page</Link></p>
+          <div className="projects-page-div">
+                <Link to='/projects' className="project-page-button" onClick={() => window.scrollTo(0, 0)}> View More Details </Link>
+            </div>
         </section>
 
-        <section className="skills">
+        <section className="skills" >
           <h1 className="my-skills-title">My Skills</h1>
           <SkillDisplay />
 
