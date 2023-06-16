@@ -21,6 +21,9 @@ const projectNodes = projects.map((project) => {
     return(
         <>
         <div className="project-showcase-container">
+            <div className="project-page-title-div">
+                <h1 className="project-page-title">My Projects</h1>
+            </div>
             {projectNodes}
             <div className="home-page-div">
                 <Link to='/' className="home-page-button" onClick={() => window.scrollTo(0, 0)}> Back to Home Page </Link>
