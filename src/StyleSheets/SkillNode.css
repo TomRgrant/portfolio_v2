@@ -23,3 +23,25 @@
     font-size: 1.8em;
     font-family: 'Josefin Slab', serif, Arial, Helvetica, sans-serif;
 }
+
+
+
+
+@media (max-width: 950px) {
+    .skill-img {
+        width: 5em;
+        height: 5em;
+    }
+}
+
+@media (max-width: 850px) {
+
+}
+
+@media (max-width: 650px) {
+
+}
+
+@media (max-width: 450px) {
+
+}

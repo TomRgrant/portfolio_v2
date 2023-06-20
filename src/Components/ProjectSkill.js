@@ -9,7 +9,7 @@ const ProjectSkill = ({ skill }) => {
   const skillObject = skills.find((s) => s.name.toLowerCase() === targetSkill);
 
 
-//   if true return the logo img
+//   if skill matched (true) return the logo img
   if (skillObject) {
     return (
       <img className="project-skill" src={skillObject.img} alt={skillObject.alt} />

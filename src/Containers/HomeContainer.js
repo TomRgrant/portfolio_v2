@@ -44,9 +44,9 @@ return (
             <p className="name-text first">Thomas</p>
             <p className="name-text last">Grant</p>
             <p className="about-me-description">
-              Hey, I'm Tom! A frontend developer passionate about crafting exceptional web experiences. With a background in video games and a focus on frontend development, I bring together technology and creativity to design visually appealing and intuitive interfaces.
-              When I'm not coding, you'll find me expanding my collection of pub quiz wooden spoons, where I hold the title of reigning champion for coming last!
-              I enjoy connecting with fellow tech enthusiasts, exchanging ideas, and discussing the latest trends. Feel free to explore my portfolio to see my dedication and skills in action. Let's work together to create remarkable and inclusive digital experiences!
+            Hey, I'm Tom! A frontend developer passionate about crafting exceptional web experiences. With a background in video games and a focus on frontend development, I bring together technology and creativity to design visually appealing and intuitive interfaces.
+            Beyond my love for coding, I am driven by a strong passion for leveraging technology for positive change. I believe in the power of tech for good and strive to create digital experiences that make a difference. Diversity and inclusivity are also close to my heart. I value embracing different perspectives and fostering inclusive design practices to create remarkable digital experiences that cater to a wider audience.
+            Feel free to explore my portfolio to witness firsthand my dedication, skills, and commitment to creating remarkable and inclusive digital experiences. Let's work together to create extraordinary and inclusive web solutions!
             </p>
           </div>
 

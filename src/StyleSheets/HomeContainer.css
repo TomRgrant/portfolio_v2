@@ -177,6 +177,8 @@ p {
     background-size: 32.53px 32.53px;
     display: flex;
     flex-direction: column;
+    overflow-y: scroll;
+    overflow-x: hidden;
 }
 
 .my-skills-title {
@@ -192,6 +194,8 @@ p {
 }
 
 .learning-container {
+    position: absolute;
+    bottom: 5px;
     width: 100%;
     height: auto;
     display: flex;
@@ -260,11 +264,19 @@ opacity: 0.6;
     .about-me-description {
         font-size: 1.6em;
     }
+
+    .learning-now-text {
+        font-size: 3em;
+    }
 }
 
 @media (max-width: 850px) {
     .about-me-description {
         font-size: 1.2em;
+    }
+
+    .learning-now-text {
+        font-size: 2.5em;
     }
 }
 
@@ -279,6 +291,9 @@ opacity: 0.6;
 
     .project-section-title {
         font-size: 2.5rem;
+    }
+    .learning-now-text {
+        font-size: 1.5em;
     }
 }
 
