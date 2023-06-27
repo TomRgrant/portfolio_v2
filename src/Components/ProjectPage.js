@@ -16,6 +16,7 @@ const viewDemo= (e) => {
     window.open(e)
 }
 
+// creates the nodes to display the skill logos
 const skillNodes = project.skills.map((skill) => {
     return <ProjectSkill skill={skill} key={skill.name}/>
 })

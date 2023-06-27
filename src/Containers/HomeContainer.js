@@ -74,7 +74,7 @@ return (
 
         <section className="skills" >
           <h1 className="my-skills-title">My Skills</h1>
-          <SkillDisplay />
+          <SkillDisplay className="scroll-y shadow-border" />
 
           <div className="learning-container">
 

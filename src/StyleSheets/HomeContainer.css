@@ -177,8 +177,6 @@ p {
     background-size: 32.53px 32.53px;
     display: flex;
     flex-direction: column;
-    overflow-y: scroll;
-    overflow-x: hidden;
 }
 
 .my-skills-title {
@@ -194,14 +192,12 @@ p {
 }
 
 .learning-container {
-    position: absolute;
-    bottom: 5px;
     width: 100%;
     height: auto;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 1em;
+    margin-bottom: .5em;
 }
 
 .learning-now-text {
@@ -232,6 +228,12 @@ p {
 transform: scale(0.8);
 opacity: 0.6;
 }
+
+.scroll-y {
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
 
 
 
@@ -268,6 +270,26 @@ opacity: 0.6;
     .learning-now-text {
         font-size: 3em;
     }
+
+    .project-page-button{
+        font-size: 2.5em;
+    }
+
+    .learning-now-text {
+        font-size: 3.7em;
+    }
+
+    .learning-now-text {
+        font-size: 3em;
+    }
+
+    .learning-now-text-left {
+        margin-right: 0em;
+    }
+    
+    .learning-now-text-right {
+        margin-left: 0em;
+    }
 }
 
 @media (max-width: 850px) {
@@ -277,6 +299,26 @@ opacity: 0.6;
 
     .learning-now-text {
         font-size: 2.5em;
+    }
+
+    .project-page-button{
+        font-size: 2.2em;
+    }
+
+    .learning-now-text {
+        font-size: 3.5em;
+    }
+
+    .learning-now-text {
+        font-size: 2.5;
+    }
+
+    .learning-now-text-left {
+        margin-right: 0em;
+    }
+    
+    .learning-now-text-right {
+        margin-left: 0em;
     }
 }
 
@@ -295,6 +337,30 @@ opacity: 0.6;
     .learning-now-text {
         font-size: 1.5em;
     }
+
+    .project-page-button{
+        font-size: 2em;
+    }
+
+    .learning-now-text {
+        font-size: 3em;
+    }
+
+    .learning-now-text {
+        font-size: 2em;
+    }
+
+    .learning-now-text-left {
+        margin-right: 0em;
+    }
+    
+    .learning-now-text-right {
+        margin-left: 0em;
+    }
+
+    .learning-slider {
+        width: 12em;
+    }
 }
 
 @media (max-width: 450px) {
@@ -304,6 +370,28 @@ opacity: 0.6;
 
     .project-section-title {
         font-size: 1.5rem;
+    }
+    .project-page-button{
+        font-size: 1.7em;
+    }
+
+    .learning-now-text {
+        font-size: 2.7em;
+    }
+    .learning-now-text {
+        font-size: 1.2em;
+    }
+
+    .learning-now-text-left {
+        margin-right: 0em;
+    }
+    
+    .learning-now-text-right {
+        margin-left: 0em;
+    }
+
+    .learning-slider {
+        width: 10.4em;
     }
 }
 
