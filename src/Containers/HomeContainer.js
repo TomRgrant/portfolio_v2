@@ -15,10 +15,16 @@ import Learn from "../Components/Learn";
 
 import { EffectCube } from "swiper";
 
+import github from '../images/github.png'
+import linkedin from "../images/linkedin.png"
+
 
 SwiperCore.use([Autoplay, Pagination, Navigation]);
 
 const HomeContainer = () => {
+
+const githubObj = {logo: github, url: 'https://github.com/TomRgrant'}
+const linkedinObj = {logo: linkedin, url: 'https://www.linkedin.com/in/thomasgrant0/'}
 
 // creates list of nodes for Projects
   const projectNodes = projects.map((project) => (
@@ -33,6 +39,10 @@ const HomeContainer = () => {
       <Learn learn={learn} />
     </SwiperSlide>
   ));
+
+  const goToLink = (url) => {
+    window.open(url)
+  }
 
 
 
@@ -50,7 +60,13 @@ return (
             </p>
           </div>
 
-          <div className="about-me-img" />
+          <div className="about-me-img">
+            <div className="socials">
+              <img className="social-img" onClick={() => {goToLink(githubObj.url)}} src={githubObj.logo} />
+              <img className="social-img" onClick={() => {goToLink(linkedinObj.url)}} src={linkedinObj.logo} />
+              {/* <img className="youtube-img" /> */}
+            </div>
+          </div>
         </section>
 
         <section className="projects" >

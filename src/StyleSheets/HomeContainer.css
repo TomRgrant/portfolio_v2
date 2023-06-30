@@ -25,13 +25,12 @@ p {
     width: 50%;
     height: 100%;
     gap: 3em;
-    padding-top: 3rem;
     z-index: -1;
 }
 
 .name-text {
-    font-family: 'Josefin Slab', serif, Arial, Helvetica, sans-serif;
-    font-size: 8em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 7.5em;
     color: #6b9080;
     display: flex;
     text-decoration: underline;
@@ -47,6 +46,34 @@ p {
     padding-right: 10%;
 }
 
+.socials {
+    position: absolute;
+    bottom: 10px;
+    display: flex;
+    gap: 2em;
+    margin: auto;
+}
+
+.social-img {
+    height: 3em;
+    width: 3em;
+    background-color: white;
+    padding: 1em;
+    border-radius: 20px;
+    box-shadow: 0 0 1em black;
+    box-shadow: 0 0 2em #6b9080;
+    border: 1px solid #6b9080;
+    transition: all;
+    transition-duration: 1s;
+}
+
+.social-img:hover {
+    transform: scale(1.1) rotate(7deg);
+    cursor: pointer;
+    border: 1px dashed #6b9080;
+    box-shadow: 0 0 2em #c7e1d6;
+}
+
 
 /* About me Img Style ------------------------*/
 
@@ -57,6 +84,8 @@ p {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
 }
 
 .headshot {
@@ -225,7 +254,7 @@ p {
 
 .learning-slider .swiper-slide-prev,
 .learning-slider .swiper-slide-next {
-transform: scale(0.8);
+transform: scale(0.3);
 opacity: 0.6;
 }
 
@@ -392,6 +421,11 @@ opacity: 0.6;
 
     .learning-slider {
         width: 10.4em;
+    }
+
+    .social-img {
+        height: 1.5em;
+        width: 1.5em;
     }
 }
 

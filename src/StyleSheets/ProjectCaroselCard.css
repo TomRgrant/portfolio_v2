@@ -19,7 +19,7 @@
     right: 0;
     margin: auto;
     text-align: center;
-    font-family: 'Josefin Slab', serif, Arial, Helvetica, sans-serif;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     padding: .3em;
     text-shadow: black;
     text-decoration: underline;
@@ -30,7 +30,7 @@
     color: #6b9080;
     padding: 0 .5em;
     font-size: 1.4em;
-    font-family: 'Carrois Gothic', serif, Arial, Helvetica, sans-serif;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .text-outline {

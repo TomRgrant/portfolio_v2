@@ -6,7 +6,7 @@
     width: auto;
     margin: auto;
     gap: .5em;
-    padding: .5em;
+    padding: 2em;
 }
 
 .learn-img {
@@ -20,8 +20,8 @@
 }
 
 .learn-name {
-    font-size: 2.5em;
-    font-family: 'Josefin Slab', serif, Arial, Helvetica, sans-serif;
+    font-size: 2em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: #6b9080;
     text-align: center;
 }
