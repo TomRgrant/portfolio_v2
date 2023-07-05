@@ -138,6 +138,8 @@
     color: #6b9080;
     font-size: 3em;
     text-decoration: none;
+    transition: all;
+    transition-delay: 1s;
 }
 
 .home-page-div:hover{

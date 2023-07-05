@@ -83,8 +83,10 @@ return (
               {projectNodes}
             </Swiper>
           </div>
-          <div className="projects-page-div">
-                <Link to='/projects' className="project-page-button" onClick={() => window.scrollTo(0, 0)}> View More Details </Link>
+          <div className="bounce-div bounce">
+          <div className="projects-page-div ">
+                <Link to='/projects' className="project-page-button " onClick={() => window.scrollTo(0, 0)}> View More Details </Link>
+            </div>
             </div>
         </section>
 

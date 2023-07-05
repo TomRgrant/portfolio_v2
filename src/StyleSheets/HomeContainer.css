@@ -171,8 +171,6 @@ p {
 }
 
 .projects-page-div {
-    width: auto;
-    margin: auto;
     background-color: #d4e2df;
     padding: .3em;
     border-radius: 15px;
@@ -180,9 +178,17 @@ p {
     border: 1px solid #445d53;
     transition: all;
     transition-duration: 0.5s;
-    padding: .5em;
     background-position: center center;
     cursor: pointer;
+}
+
+.projects-page-div:hover{
+    transform: scale(1.05) rotateX(20deg);
+    box-shadow:  .3em .3em .3em rgb(79, 78, 78);
+}
+
+.bounce-div {
+    margin-top: 1em;
 }
 
 .project-page-button {
@@ -191,10 +197,6 @@ p {
     text-decoration: none;
 }
 
-.projects-page-div:hover{
-    transform: scale(1.05) rotateX(20deg);
-    box-shadow:  .3em .3em .3em rgb(79, 78, 78);
-}
 
 
 /* Skills Section -------------------------------------- */

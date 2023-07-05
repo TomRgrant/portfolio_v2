@@ -38,7 +38,7 @@ const skillNodes = project.skills.map((skill) => {
                         </div>
                     </div>
                     <p className="project-description">{project.description}</p>
-                    <div className="code-buttons">
+                    <div className="code-buttons bounce">
                         <h2 className="project-button" onClick={() => sourceCode(project.code)}>View Source Code</h2>
                         <h2 className="project-button" onClick={() => viewDemo(project.url)} hidden={project.url ? false : true}>View Demo</h2>
                     </div>
