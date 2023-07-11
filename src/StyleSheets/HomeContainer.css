@@ -68,10 +68,17 @@ p {
 }
 
 .social-img:hover {
-    transform: scale(1.1) rotate(7deg);
     cursor: pointer;
     border: 1px dashed #6b9080;
     box-shadow: 0 0 2em #c7e1d6;
+}
+
+.social-img-right:hover {
+    transform: scale(1.1) rotate(7deg);
+}
+
+.social-img-left:hover {
+    transform: scale(1.1) rotate(-7deg);
 }
 
 
@@ -397,6 +404,14 @@ opacity: 0.6;
 @media (max-width: 450px) {
     .about-me-description {
         font-size: .8em;
+    }
+
+    .name-text{
+        font-size: 2em;
+    }
+
+    .about-me-name{
+        gap: 1.5em;
     }
 
     .project-section-title {

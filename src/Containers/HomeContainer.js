@@ -54,16 +54,17 @@ return (
             <p className="name-text first">Thomas</p>
             <p className="name-text last">Grant</p>
             <p className="about-me-description">
-            Hey, I'm Tom! A frontend developer passionate about crafting exceptional web experiences. With a background in video games and a focus on frontend development, I bring together technology and creativity to design visually appealing and intuitive interfaces.
-            Beyond my love for coding, I am driven by a strong passion for leveraging technology for positive change. I believe in the power of tech for good and strive to create digital experiences that make a difference. Diversity and inclusivity are also close to my heart. I value embracing different perspectives and fostering inclusive design practices to create remarkable digital experiences that cater to a wider audience.
-            Feel free to explore my portfolio to witness firsthand my dedication, skills, and commitment to creating remarkable and inclusive digital experiences. Let's work together to create extraordinary and inclusive web solutions!
+            Hey, I'm Tom! I'm a frontend developer with a passion for crafting exceptional web experiences. With a strong focus on frontend development, I bring together technology and creativity to design visually appealing and intuitive interfaces. Beyond coding, I'm driven by a strong passion for leveraging technology for positive change. I believe in the power of tech for good and strive to create digital experiences that make a difference. Diversity and inclusivity are also close to my heart. Let's work together to create extraordinary and inclusive web solutions!
+            </p>
+            <p className="about-me-description">
+            Feel free to explore my portfolio and see firsthand my dedication, skills, and commitment to crafting exceptional and inclusive web solutions.
             </p>
           </div>
 
           <div className="about-me-img">
             <div className="socials">
-              <img className="social-img" onClick={() => {goToLink(githubObj.url)}} src={githubObj.logo} />
-              <img className="social-img" onClick={() => {goToLink(linkedinObj.url)}} src={linkedinObj.logo} />
+              <img className="social-img social-img-left" onClick={() => {goToLink(githubObj.url)}} src={githubObj.logo} />
+              <img className="social-img social-img-right" onClick={() => {goToLink(linkedinObj.url)}} src={linkedinObj.logo} />
               {/* <img className="youtube-img" /> */}
             </div>
           </div>
