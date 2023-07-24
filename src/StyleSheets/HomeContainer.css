@@ -54,6 +54,14 @@ p {
     margin: auto;
 }
 
+.tool {
+    color: white;
+    position: absolute;
+    top: -3em;
+    font-size: 1.5em;
+    right: -4.5em;
+}
+
 .social-img {
     height: 3em;
     width: 3em;
@@ -67,6 +75,11 @@ p {
     transition-duration: 1s;
 }
 
+.trans {
+    transition: all;
+    transition-duration: 1s;
+}
+
 .social-img:hover {
     cursor: pointer;
     border: 1px dashed #6b9080;
@@ -74,11 +87,15 @@ p {
 }
 
 .social-img-right:hover {
-    transform: scale(1.1) rotate(7deg);
+    transform: scale(1.1) rotate(7deg) translateY(-0.2em);
+}
+
+.social-img-center:hover {
+    transform: scale(1.1) translateY(-0.5em);
 }
 
 .social-img-left:hover {
-    transform: scale(1.1) rotate(-7deg);
+    transform: scale(1.1) rotate(-7deg) translateY(-0.2em);
 }
 
 
@@ -87,7 +104,7 @@ p {
 .about-me-img {
     width: 50%;
     height: 100%;
-    background-image: linear-gradient(to right, #cce3deff, rgba(0, 0, 0, 0.5) 60%), url('../images/me_in_my_brain.jpeg');
+    background-image: linear-gradient(to right, #cce3deff, rgba(0, 0, 0, 0.5) 60%), url('../images/codeBackground.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -357,6 +374,17 @@ opacity: 0.6;
     
     .learning-now-text-right {
         margin-left: 0em;
+    }
+
+    .socials {
+        display: grid;
+    }
+
+    .tool {
+        top: -6em;
+        right: 0;
+        margin: auto;
+        text-align: center;
     }
 }
 

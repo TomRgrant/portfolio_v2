@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import "../StyleSheets/HomeContainer.css";
 import ProjectCaroselCard from "../Components/ProjectCaroselCard";
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -17,6 +17,7 @@ import { EffectCube } from "swiper";
 
 import github from '../images/github.png'
 import linkedin from "../images/linkedin.png"
+import gmail from "../images/gmail.png"
 
 
 SwiperCore.use([Autoplay, Pagination, Navigation]);
@@ -25,6 +26,7 @@ const HomeContainer = () => {
 
 const githubObj = {logo: github, url: 'https://github.com/TomRgrant'}
 const linkedinObj = {logo: linkedin, url: 'https://www.linkedin.com/in/thomasgrant0/'}
+const [tool, setTool] = useState(true);
 
 // creates list of nodes for Projects
   const projectNodes = projects.map((project) => (
@@ -41,6 +43,15 @@ const linkedinObj = {logo: linkedin, url: 'https://www.linkedin.com/in/thomasgra
   ));
 
   const goToLink = (url) => {
+    if (url === 'email'){
+      navigator.clipboard.writeText('grntthomasronnie@gmail.com')
+      setTool(false);
+
+      setTimeout(() => {
+        setTool(true);
+      }, 1500);
+      return null
+    }
     window.open(url)
   }
 
@@ -49,7 +60,7 @@ const linkedinObj = {logo: linkedin, url: 'https://www.linkedin.com/in/thomasgra
 return (
     <>
       <section className="home-container">
-        <section className="about-me-header">
+        <section className="about-me-header ">
           <div className="about-me-name">
             <p className="name-text first">Thomas</p>
             <p className="name-text last">Grant</p>
@@ -63,14 +74,16 @@ return (
 
           <div className="about-me-img">
             <div className="socials">
-              <img className="social-img social-img-left" onClick={() => {goToLink(githubObj.url)}} src={githubObj.logo} />
-              <img className="social-img social-img-right" onClick={() => {goToLink(linkedinObj.url)}} src={linkedinObj.logo} />
+              <p className="tool" hidden={tool}>Email Has Been Copied</p>
+              <img className="social-img social-img-left" onClick={() => {goToLink(githubObj.url)}} src={githubObj.logo} alt="Link to Github Profile"/>
+              <img className="social-img social-img-center" onClick={() => {goToLink(linkedinObj.url)}} src={linkedinObj.logo} alt="Link to LinkedIn Profile"/>
+                <img className="social-img social-img-right" onClick={() => {goToLink('email')}} src={gmail} alt="Link to Email"/>
               {/* <img className="youtube-img" /> */}
             </div>
           </div>
         </section>
 
-        <section className="projects" >
+        <section className="projects " >
           <h1 className="project-section-title">My Projects</h1>
 
           <div className="project-cards">
@@ -91,7 +104,7 @@ return (
             </div>
         </section>
 
-        <section className="skills" >
+        <section className="skills " >
           <h1 className="my-skills-title">My Skills</h1>
           <SkillDisplay className="scroll-y shadow-border" />
 
