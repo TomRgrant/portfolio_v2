@@ -11,7 +11,7 @@ root.render(
   <>
   <BrowserRouter>
   <Routes>
-    <Route path='/' element={<HomeContainer/>}/>
+    <Route path='/portfolio_v2' element={<HomeContainer/>}/>
     <Route path="/projects" element={<ProjectContainer/>}/>
   </Routes>
   </BrowserRouter>
